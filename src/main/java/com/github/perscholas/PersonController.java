@@ -18,7 +18,7 @@ public class PersonController {
 
     private PersonServiceInterface service;
 
-    @Autowired
+    @Autowired // Swap from `PersonServiceLogger` to `PersonService` to disable logging
     public PersonController(PersonServiceLogger service) {
         this.service = service;
     }
