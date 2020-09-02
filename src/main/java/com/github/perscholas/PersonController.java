@@ -19,7 +19,7 @@ public class PersonController {
     private PersonServiceInterface service;
 
     @Autowired
-    public PersonController(PersonService service) {
+    public PersonController(PersonServiceLogger service) {
         this.service = service;
     }
 
